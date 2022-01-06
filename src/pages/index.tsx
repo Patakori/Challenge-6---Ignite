@@ -106,7 +106,7 @@ interface HomeProps {
             {preview && (
               <aside>
                 <Link href="/api/exit-preview">
-                  <a>Sair do modo Preview</a>
+                  <a className={commonStyles.preview}>Sair do modo Preview</a>
                 </Link>
               </aside>
 		        )}

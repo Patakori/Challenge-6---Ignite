@@ -9,28 +9,31 @@
     margin-top: 5rem;
     padding-bottom: 5rem;
 
-    h2{
+    >h2{
         font-size:2.25rem;
         color:var(--white-100);
         margin: 3rem 0;
       }
     
-      p, span, a, ul{
+       p, span, ul{
         font-size:1.125rem;
         line-height: 1.8;
         margin: 1.8rem 0;
       }
     
-      a {
+      > a {
         color:var(--white-100);
+        font-size:1.125rem;
+        line-height: 1.8;
+        margin: 1.8rem 0;
       }
     
-      strong{
+      >strong{
         font-weight: 700;
         color:var(--gray-100);
       }
     
-      ul {
+      >ul {
         padding-left: 1.5rem;
     
         li {
@@ -50,8 +53,8 @@
     margin-bottom: 4rem;
     color: var(--gray-100);
 
-    time {
-        font-size: 0,875rem;
+    >time {
+        font-size: 0.875rem;
         display: flex;
         align-items: center;
 
@@ -60,8 +63,8 @@
         }
     }
 
-    p {
-        font-size: 0,875rem;
+    > p {
+        font-size: 0.875rem;
         display: flex;
         align-items: center;
         margin: 0rem 1.5rem ;
@@ -71,3 +74,38 @@
         }
     }
 }
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3.75rem;
+  border-top: 1px solid var(--black-50);
+
+  div {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    
+
+    >h3 {
+      font-size:1.125rem;
+      font-weight: 400;
+      color:var(--heading);
+      margin-bottom:0.5rem;
+    }
+
+    >a {
+      color: var(--purple);
+      font-weight:600;
+    }
+  }
+
+  div + div{
+    text-align: right;
+
+  }
+}
+
+
+
+
