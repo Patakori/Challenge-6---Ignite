@@ -44,6 +44,16 @@
     h1 {
         color:var(--white-100)
     }
+
+    div{
+      >span{
+          margin-top: 1rem;
+          display:block;
+          font-style: italic;
+          font-size: 0.875rem;
+          color:var(--gray-100)
+      }
+    }
 }
 
 .infos{
