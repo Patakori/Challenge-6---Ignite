@@ -9,7 +9,7 @@ export default class Comments extends Component {
       script.setAttribute("crossorigin","anonymous");
       script.setAttribute("async", 'true');
       script.setAttribute("repo", "Patakori/Challenge-6---Ignite");
-      script.setAttribute("issue-term", "pathname");
+      script.setAttribute("issue-term", "title");
       script.setAttribute( "theme", "github-dark");
       anchor.appendChild(script);
   }

@@ -194,17 +194,20 @@ interface PostProps {
      [Prismic.Predicates.at('document.type', 'posts')],
      {
        pageSize: 1,
-       orderings: '[document.first_publication_date]',
        after: response.id,
+       orderings: '[document.first_publication_date]',
      });
 
    const nextPost = await prismic.query(
      [Prismic.Predicates.at('document.type', 'posts')],
      {
        pageSize: 1,
-       orderings: '[document.first_publication_date desc]',
        after: response.id,
+       orderings: '[document.first_publication_date desc]',
      });
+
+     
+     console.log(nextPost)
 
    const post = {
     uid: response.uid,

@@ -123,7 +123,7 @@ interface HomeProps {
       [Prismic.predicates.at('document.type', 'posts')],
       {
         pageSize: 1,
-        orderings: '[document.last_publication_date desc]',
+        orderings: '[document.first_publication_date desc]',
         ref: previewData?.ref ?? null,
       }
     );
